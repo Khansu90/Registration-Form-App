@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="45dp">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="24sp"
+           android:fontFamily="sans-serif"
+           android:text="Register"
+           android:id="@+id/text_view_register"/>
+       
+       <Spinner
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           tools:listitem="@android:layout/simple_list_item_1"
+           android:layout_marginTop="12dp"
+           android:id="@+id/spinner_user"/>
+       
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_marginTop="24dp"
+           android:hint="First Name">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textCapWords"
+               tools:text = "Example Name"
+               android:id="@+id/edit_text_first_name"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_marginTop="24dp"
+           android:hint="Last Name">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               tools:text = "Example Name"
+               android:inputType="textCapWords"
+               android:id="@+id/edit_text_last_name"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_marginTop="24dp"
+           android:hint="Email Address">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               tools:text = "Example Name"
+               android:inputType="textEmailAddress"
+               android:id="@+id/edit_text_email_address"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_marginTop="24dp"
+           android:hint="Phone Number">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               tools:text = "Example Name"
+               android:id="@+id/edit_text_phone_number"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="24dp"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           app:passwordToggleEnabled="true"
+           android:hint="Password">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textPassword"
+               tools:text = "Example Name"
+               android:id="@+id/edit_text_password"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Create Account"
+           android:layout_marginTop="36dp"
+           android:id="@+id/button_create_account"/>
+       
+       
+       
+       
+   </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</ScrollView>
+
+   
